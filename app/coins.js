@@ -2,8 +2,8 @@ var bch = require("./coins/bch.js");
 var bab = require("./coins/bab.js");
 
 module.exports = {
-  "BCH": bch,
+  "TRRXITTE": bch,
   "BAB": bab,
 
-  "coins":["BCH", "BAB"]
+  "coins":["TRRXITTE", "BAB"]
 };
