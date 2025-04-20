@@ -91,12 +91,12 @@ div.table-responsive
 					if (hasBlockStats)
 						td.data-cell.text-monospace.text-right
 							- var currencyValue = new Decimal(block.stats.volume);
-							- var currencyValueDecimals = 2;
+							- var currencyValueDecimals = 8;
 							include ./value-display.pug
 
 					td.data-cell.text-monospace.text-right
 						- var currencyValue = new Decimal(block.totalFees).dividedBy(block.size);
-						- var currencyValueDecimals = 2;
+						- var currencyValueDecimals = 8;
 						- currencyFormatTypeOverride = "sat";
 						- currencyUnitSuffix = "/B"
 						include ./value-display.pug
