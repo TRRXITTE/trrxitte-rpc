@@ -330,6 +330,7 @@ module.exports = {
 		utxo_increase: 1,
 		utxo_size_inc: 117,
 	  },
+		},
 		"test": {
 			"avgfee": 0,
 			"avgfeerate": 0,
