@@ -1,8 +1,8 @@
 {
     "coinbase_tags" : {
-        "http://toom.im -- P2pool": {
-            "name": "Toomim p2pool",
-            "link": "http://github.com/jtoomim/p2pool"
+        "sha256 TRRXITTE": {
+            "name": "sha256 TRRXITTE",
+            "link": "https://sha256.trrxitte.com"
         },
         "HappyBchPool": {
             "name": "HappyBchPool",
