@@ -91,7 +91,7 @@ div.table-responsive
 					if (hasBlockStats)
 						td.data-cell.text-monospace.text-right
 							- var currencyValue = new Decimal(block.stats.volume);
-							- var currencyValueDecimals = 8;
+							- var currencyValueDecimals = 0;
 							include ./value-display.pug
 
 					td.data-cell.text-monospace.text-right
@@ -105,7 +105,7 @@ div.table-responsive
 
 					td.data-cell.text-monospace.text-right
 						- var currencyValue = new Decimal(block.totalFees).toDecimalPlaces(9);
-						- var currencyValueDecimals = 2;
+						- var currencyValueDecimals = 0;
 						include ./value-display.pug
 						
 					
