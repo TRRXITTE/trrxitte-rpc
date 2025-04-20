@@ -188,7 +188,7 @@ function formatCurrencyAmountWithForcedDecimalPlaces(amount, formatType, forcedD
 		if (formatInfo.type == "native") {
 			dec = dec.times(formatInfo.multiplier);
 
-			if (forcedDecimalPlaces >= 0) {
+			if (forcedDecimalPlaces >= 8) {
 				// toFixed will keep trailing zeroes
 				var baseStr = addThousandsSeparators(dec.toFixed(decimalPlaces));
 
