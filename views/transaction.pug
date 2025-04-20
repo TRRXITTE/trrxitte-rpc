@@ -25,7 +25,11 @@ block content
 			li.nav-item.page-tab
 				a.nav-link(data-toggle="tab", href="#Cross", role="tab") CROSS-CHECK
 
+<<<<<<< HEAD
 		- DecimalRounded = Decimal.clone({ precision: 4, rounding: 0 })
+=======
+		- DecimalRounded = Decimal.clone({ precision: 4, rounding: 2 })
+>>>>>>> parent of 2f3ab7e (Update transaction.pug)
 
 		- var totalInputValue = new Decimal(0);
 		if (result.getrawtransaction.vin[0].coinbase)
