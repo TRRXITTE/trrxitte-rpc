@@ -29,7 +29,7 @@ var currencyUnits = [
 		name:"sat",
 		multiplier:100000000,
 		values:["sat", "satoshi"],
-		decimalPlaces:8
+		decimalPlaces:0
 	},
 	{
 		type:"exchanged",
@@ -59,16 +59,16 @@ var currencyUnits = [
 ];
 
 module.exports = {
-	name:"Bitcoin Cash",
+	name:"TRRXITTE Bitcoin",
 	ticker:"TRRXITTE",
 	logoUrl:"/img/logo/bitcoin.png",
 	faviconUrl:"/img/logo/bitcoin.png",
 	siteTitle:"TRRXITTE Bitcoin database scan",
 	siteTitleHtml:"TRRXITTE Bitcoin database scan",
-	siteDescriptionHtml:"<b>TRRXITTE Explorer</b> is <a href='https://github.com/sickpig/bch-rpc-explorer). If you run your own [Bitcoin Cash Full Node](https://www.bitcoincash.org/nodes.html), **TRRXITTE Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/sickpig/bch-rpc-explorer) for a list of features and instructions for running.",
-	nodeTitle:"Bitcoin Cash Full Node",
-	nodeUrl:"https://www.bitcoinunlimited.info/download",
-	demoSiteUrl: "https://explorer.bitcoinunlimited.info",
+	siteDescriptionHtml:"<b>TRRXITTE database</b>",
+	nodeTitle:"TRRXITTE Bitcoin Full Node",
+	nodeUrl:"https://www.btc.trrxitte.com",
+	demoSiteUrl: "https://explorer.trrxitte.com",
 	miningPoolsConfigUrls:[
 		"https://raw.githubusercontent.com/btccom/Blockchain-Known-Pools/master/pools.json",
 		"https://raw.githubusercontent.com/blockchain/Blockchain-Known-Pools/master/pools.json"
@@ -83,68 +83,67 @@ module.exports = {
 	difficultyAdjustmentBlockOffset: 1008,
 	difficultyAdjustmentBlockCount: 4,
 	maxSupplyByNetwork: {
-		"main": new Decimal(20999817.31308491), // ref: https://bitcoin.stackexchange.com/a/38998
+		"main": new Decimal(100000000), // ref: https://bitcoin.stackexchange.com/a/38998
 		"test": new Decimal(21000000),
 		"chip": new Decimal(21000000),
 		"test4": new Decimal(21000000),
 		"scale": new Decimal(21000000),
 		"regtest": new Decimal(21000000)
 	},
-	targetBlockTimeSeconds: 600,
-	targetBlockTimeMinutes: 10,
+	targetBlockTimeSeconds: 100,
+	targetBlockTimeMinutes: 1.5,
 	currencyUnits:currencyUnits,
 	currencyUnitsByName:{"TRRXITTE":currencyUnits[0], "mTRRXITTE":currencyUnits[1], "bits":currencyUnits[2], "sat":currencyUnits[3]},
 	baseCurrencyUnit:currencyUnits[3],
 	defaultCurrencyUnit:currencyUnits[0],
 	feeSatoshiPerByteBucketMaxima: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 50, 75, 100, 150],
-	genesisBlockHashesByNetwork:{
-		"main":    "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
-		"test":    "000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943",
-		"chip":    "000000001dd410c49a788668ce26751718cc797474d3152a5fc073dd44fd9f7b",
-		"test4":   "000000001dd410c49a788668ce26751718cc797474d3152a5fc073dd44fd9f7b",
-		"scale":   "00000000e6453dc2dfe1ffa19023f86002eb11dbb8e87d0291a4599f0430be52",
-		"regtest": "0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206"
-	},
-	genesisCoinbaseTransactionIdsByNetwork: {
-		"main":    "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
-		"test":    "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
-		"chip":   "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
-		"test4":   "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
-		"scale":   "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
-		"regtest": "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b"
-	},
-	genesisCoinbaseTransactionsByNetwork:{
-		"main": {
-			"hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff0804ffff001d02fd04ffffffff0100f2052a01000000434104f5eeb2b10c944c6b9fbcfff94c35bdeecd93df977882babc7f3a2cf7f5c81d3b09a68db7f0e04f21de5d4230e75e6dbe7ad16eefe0d4325a62067dc6f369446aac00000000",
-			"txid": "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
-			"hash": "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
-			"size": 204,
-			"version": 1,
-			"confirmations":618235,
-			"vin": [
-				{
-					"coinbase": "04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73",
-					"sequence": 4294967295
-				}
-			],
-			"vout": [
-				{
-					"value": 50,
-					"n": 0,
-					"scriptPubKey": {
-						"asm": "04f5eeb2b10c944c6b9fbcfff94c35bdeecd93df977882babc7f3a2cf7f5c81d3b09a68db7f0e04f21de5d4230e75e6dbe7ad16eefe0d4325a62067dc6f369446a OP_CHECKSIG",
-						"hex": "4104f5eeb2b10c944c6b9fbcfff94c35bdeecd93df977882babc7f3a2cf7f5c81d3b09a68db7f0e04f21de5d4230e75e6dbe7ad16eefe0d4325a62067dc6f369446aac",
-						"reqSigs": 1,
-						"type": "pubkey",
-						"addresses": [
-							"1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa"
-						]
-					}
-				}
-			],
-			"blockhash": "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
-			"time": 1230988505,
-			"blocktime": 1230988505
+	genesisBlockHashesByNetwork: {
+		main: "00000484c46425cb3b260b4ecc3c33f032bf8bc8396eca605309696e4c361516",
+		test: "000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943",
+		chip: "000000001dd410c49a788668ce26751718cc797474d3152a5fc073dd44fd9f7b",
+		test4: "000000001dd410c49a788668ce26751718cc797474d3152a5fc073dd44fd9f7b",
+		scale: "00000000e6453dc2dfe1ffa19023f86002eb11dbb8e87d0291a4599f0430be52",
+		regtest: "0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206",
+	  },
+	  genesisCoinbaseTransactionIdsByNetwork: {
+		main: "3b91683bea9b73100e013a7a1af2c9c824f79157d81bf9f63cb25fc41f4d29fe",
+		test: "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+		chip: "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+		test4: "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+		scale: "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+		regtest: "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+	  },
+	  genesisCoinbaseTransactionsByNetwork: {
+		main: {
+		  hex: "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff2304ffff001d01041e323032352d30332d333120545252584954544520426974636f696effffffff0150c300000000000041042613842e49710f8e990f7352fd68c43722e3ae81f1cdd7c699f3496a333c5b2e862730b14e44646183e05e92fb1898193076b4022ececc798cd2b079b6a6cb91ac00000000",
+		  txid: "3b91683bea9b73100e013a7a1af2c9c824f79157d81bf9f63cb25fc41f4d29fe",
+		  hash: "3b91683bea9b73100e013a7a1af2c9c824f79157d81bf9f63cb25fc41f4d29fe",
+		  size: 190,
+		  version: 1,
+		  confirmations: 1,
+		  vin: [
+			{
+			  coinbase: "04ffff001d01041e323032352d30332d333120545252584954544520426974636f696e",
+			  sequence: 4294967295,
+			},
+		  ],
+		  vout: [
+			{
+			  value: 50.00000000,
+			  n: 0,
+			  scriptPubKey: {
+				asm: "042613842e49710f8e990f7352fd68c43722e3ae81f1cdd7c699f3496a333c5b2e862730b14e44646183e05e92fb1898193076b4022ececc798cd2b079b6a6cb91 OP_CHECKSIG",
+				hex: "41042613842e49710f8e990f7352fd68c43722e3ae81f1cdd7c699f3496a333c5b2e862730b14e44646183e05e92fb1898193076b4022ececc798cd2b079b6a6cb91ac",
+				reqSigs: 1,
+				type: "pubkey",
+				addresses: ["1K7r8rR9nkwb4o9uLqWq4oJ3oqZ3oJ3oqZ"],
+			  },
+			},
+		  ],
+		  blockhash: "00000484c46425cb3b260b4ecc3c33f032bf8bc8396eca605309696e4c361516",
+		  time: 1743436800,
+		  blocktime: 1743436800,
+		},
 		},
 		"test": {
 			"hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff4d04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73ffffffff0100f2052a01000000434104678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5fac00000000",
@@ -303,39 +302,34 @@ module.exports = {
 			"blocktime": 1296688602
 		}
 	},
-	genesisBlockStatsByNetwork:{
-		"main": {
-			"avgfee": 0,
-			"avgfeerate": 0,
-			"avgtxsize": 0,
-			"blockhash": "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
-			"feerate_percentiles": [
-				0,
-				0,
-				0,
-				0,
-				0
-			],
-			"height": 0,
-			"ins": 0,
-			"maxfee": 0,
-			"maxfeerate": 0,
-			"maxtxsize": 0,
-			"medianfee": 0,
-			"mediantime": 1231006505,
-			"mediantxsize": 0,
-			"minfee": 0,
-			"minfeerate": 0,
-			"mintxsize": 0,
-			"outs": 1,
-			"subsidy": 50,
-			"time": 1231006505,
-			"total_out": 0,
-			"total_size": 0,
-			"totalfee": 0,
-			"txs": 1,
-			"utxo_increase": 1,
-			"utxo_size_inc": 117
+	genesisBlockStatsByNetwork: {
+		main: {
+		  avgfee: 0,
+		  avgfeerate: 0,
+		  avgtxsize: 0,
+		  blockhash: "00000484c46425cb3b260b4ecc3c33f032bf8bc8396eca605309696e4c361516",
+		  feerate_percentiles: [0, 0, 0, 0, 0],
+		  height: 0,
+		  ins: 0,
+		  maxfee: 0,
+		  maxfeerate: 0,
+		  maxtxsize: 0,
+		  medianfee: 0,
+		  mediantime: 1743436800,
+		  mediantxsize: 0,
+		  minfee: 0,
+		  minfeerate: 0,
+		  mintxsize: 0,
+		  outs: 1,
+		  subsidy: 50,
+		  time: 1743436800,
+		  total_out: 0,
+		  total_size: 0,
+		  totalfee: 0,
+		  txs: 1,
+		  utxo_increase: 1,
+		  utxo_size_inc: 117,
+		},
 		},
 		"test": {
 			"avgfee": 0,
