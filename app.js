@@ -327,8 +327,8 @@ function refreshNetworkVolumes() {
 		var endBlockTime7d = 0;
 
 		Promise.all(promises).then(function(results) {
-			var volume1d = new Decimal(8);
-			var volume7d = new Decimal(8);
+			var volume1d = new Decimal(0);
+			var volume7d = new Decimal(0);
 
 			var blocks1d = 0;
 			var blocks7d = 0;
