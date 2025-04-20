@@ -302,7 +302,7 @@ module.exports = {
 			"blocktime": 1296688602
 		}
 	},
-	genesisBlockStatsByNetwork: {
+	genesisBlockStatsByNetwork {
 		main: {
 		  avgfee: 0,
 		  avgfeerate: 0,
