@@ -181,7 +181,7 @@ function formatCurrencyAmountWithForcedDecimalPlaces(amount, formatType, forcedD
 
 		var decimalPlaces = formatInfo.decimalPlaces;
 
-		if (forcedDecimalPlaces >= 0) {
+		if (forcedDecimalPlaces >= 8) {
 			decimalPlaces = forcedDecimalPlaces;
 		}
 
