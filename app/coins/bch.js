@@ -134,7 +134,7 @@ module.exports = {
       ],
       vout: [
         {
-          value: 50.00000000,
+          value: 1000.00000000,
           n: 0,
           scriptPubKey: {
             asm: "042613842e49710f8e990f7352fd68c43722e3ae81f1cdd7c699f3496a333c5b2e862730b14e44646183e05e92fb1898193076b4022ececc798cd2b079b6a6cb91 OP_CHECKSIG",
