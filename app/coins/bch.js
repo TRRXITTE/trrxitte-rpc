@@ -317,7 +317,7 @@ module.exports = {
       minfeerate: 0,
       mintxsize: 0,
       outs: 1,
-      subsidy: 1000,
+      subsidy: 50,
       time: 1743436800,
       total_out: 0,
       total_size: 0,
