@@ -134,7 +134,7 @@ module.exports = {
       ],
       vout: [
         {
-          value: 1000.00000000,
+          value: 50.00000000,
           n: 0,
           scriptPubKey: {
             asm: "042613842e49710f8e990f7352fd68c43722e3ae81f1cdd7c699f3496a333c5b2e862730b14e44646183e05e92fb1898193076b4022ececc798cd2b079b6a6cb91 OP_CHECKSIG",
@@ -164,7 +164,7 @@ module.exports = {
       ],
       vout: [
         {
-          value: 1000.00000000,
+          value: 50.00000000,
           n: 0,
           scriptPubKey: {
             asm: "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f OP_CHECKSIG",
@@ -194,7 +194,7 @@ module.exports = {
       ],
       vout: [
         {
-          value: 1000.00000000,
+          value: 50.00000000,
           n: 0,
           scriptPubKey: {
             asm: "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f OP_CHECKSIG",
@@ -224,7 +224,7 @@ module.exports = {
       ],
       vout: [
         {
-          value: 1000.00000000,
+          value: 50.00000000,
           n: 0,
           scriptPubKey: {
             asm: "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f OP_CHECKSIG",
@@ -254,7 +254,7 @@ module.exports = {
       ],
       vout: [
         {
-          value: 1000.00000000,
+          value: 50.00000000,
           n: 0,
           scriptPubKey: {
             asm: "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f OP_CHECKSIG",
@@ -284,7 +284,7 @@ module.exports = {
       ],
       vout: [
         {
-          value: 1000.00000000,
+          value: 50.00000000,
           n: 0,
           scriptPubKey: {
             asm: "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f OP_CHECKSIG",
