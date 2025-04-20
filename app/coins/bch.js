@@ -29,7 +29,7 @@ var currencyUnits = [
 		name:"sat",
 		multiplier:100000000,
 		values:["sat", "satoshi"],
-		decimalPlaces:0
+		decimalPlaces:8
 	},
 	{
 		type:"exchanged",
