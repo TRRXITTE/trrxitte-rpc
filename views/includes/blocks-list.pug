@@ -17,6 +17,12 @@ div.table-responsive
 				th.data-header.text-right
 					span.border-dotted(title="The number of transactions included in each block.", data-toggle="tooltip") N(tx)
 
+				if (hasBlockStats)
+					th.data-header.text-right
+						span.border-dotted(title="The total output of all transactions in each block.", data-toggle="tooltip") Volume
+
+				th.data-header.text-right
+					span.border-dotted(title="The average fee (sat/B) for all block transactions.", data-toggle="tooltip") Avg Fee
 
 				th.data-header.text-right Σ Fee
 				
